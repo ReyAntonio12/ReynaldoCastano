@@ -248,7 +248,7 @@ body {
   transition: all 300ms ease-in-out;
 }
 
-.navigation-menu__option:hover .menu__link{
+.navigation-menu__option:hover .menu__link, .menu__link--active{
   color: var(--secondary-color);
 }
 
@@ -274,4 +274,158 @@ body {
 
 .menu__icon {
     font-size: 2.2rem;
+}
+
+/* ABOUT ME SECTION */
+
+/* EVERYTHING UNDER THIS WOULD BE FOR THIS SECTION ONLY IF THERE IS A SPECIAL COMMENT */
+
+/* TITLE */
+
+.about-me__content{
+  height: 100%;
+  min-height: 100%;
+  padding: 5rem;
+  padding-right: 2.5rem;
+  display: block;
+  overflow: auto;
+}
+
+.about-me__header{
+  margin-bottom: 4rem;
+  display: inline-block;
+}
+
+.about-me__title,
+services__title {
+  font-size: 3rem;
+  position: relative;
+}
+
+.about-me__title::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: -25px;
+  width: 50px;
+  height: 30px;
+  background-image: -webkit-repeating-radial-gradient(center center, var(--secondary-color), var(--secondary-color) 1px, transparent 0px, transparent 100%);
+  background-size: 6px 6px;
+  opacity: 0.4;
+}
+
+.title__color {
+  color: var(--secondary-color);
+}
+
+/* Personal Information*/
+
+.about-me__personal-info{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+.personal-info__bio{
+  flex-basis: 58%;
+}
+
+.personal-info__data{
+  flex-basis: 42%;
+  padding: 0 1.5rem;
+}
+
+.personal-info__description{
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+}
+
+.personal-info__option{
+  margin-bottom: 1rem;
+}
+
+.personal-info__first{
+  margin-right: 0.5rem;
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+/* SHARED STYLES */
+
+.about-me__services, .about-me__presence{
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.services__header, .presences__header{
+  display: inline-block;
+  padding-right: 1.2rem;
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+.services__title, .precenses__title{
+  font-size: 2.3rem;
+}
+
+.services__title::after,
+.precenses__title::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 0px;
+  width: 30px;
+  height: 20px;
+  background-image: -webkit-repeating-radial-gradient(center center, var(--secondary-color), var(--secondary-color) 1px, transparent 0px, transparent 100%);
+  background-size: 6px 6px;
+  opacity: 0.5;
+}
+
+/*SERVICES*/
+
+.services__container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.service__icon{
+  color: var(--secondary-color);
+  font-size: 3.8rem;
+}
+
+.services__service{
+  flex-basis: calc(50% - 3rem);
+  margin-right: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+/* Presence */
+
+.about-me__presences{
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.presences__header{
+  margin-bottom: 3rem;
+}
+
+.precenses__container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.precense__link{
+  display: block;
+  width: 100%;
+  opacity: 0.7;
+  transition: all 300ms ease-in-out;
+}
+
+.precense__link:hover{
+  opacity: 1;
 }
