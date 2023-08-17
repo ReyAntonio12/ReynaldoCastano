@@ -10,6 +10,7 @@
   --subtitle-color: #8C8C8C;
   --text-color: #555555;
   --sidebar-color: #EAF1FB;
+  --box-color: #fcfcfc;
 }
 
 /* General Styles */
@@ -37,7 +38,8 @@ body {
   background-image: url("../img/background.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: -30px -120px;
+  background-position: -30px -120px; 
+  overflow-y: hidden;
 }
 
 /* Main Structure */
@@ -284,7 +286,8 @@ body {
 
 .about-me__content,
 .portfolio__content,
-.blog__content{
+.blog__content,
+.contact-me__content{
   height: 100%;
   min-height: 100%;
   padding: 5rem;
@@ -295,7 +298,8 @@ body {
 
 .about-me__header,
 .portfolio__header,
-.blog__header{
+.blog__header,
+.contact-me__header{
   margin-bottom: 4rem;
   display: inline-block;
 }
@@ -303,14 +307,16 @@ body {
 .about-me__title,
 .services__title,
 .portfolio__title,
-.blog__title {
+.blog__titl,
+.contact-me__title {
   font-size: 3rem;
   position: relative;
 }
 
 .about-me__title::after,
 .portfolio__title::after,
-.blog__title::after {
+.blog__title::after,
+.contact-me__title::after {
   content: "";
   position: absolute;
   top: 20px;
@@ -361,24 +367,25 @@ body {
 
 /* SHARED STYLES */
 
-.about-me__services, .about-me__presence{
+.about-me__services, .about-me__presence, .contact-me__form-box{
   width: 100%;
   margin-bottom: 3rem;
 }
 
-.services__header, .presences__header{
+.services__header, .presences__header, .contact-me__form-header{
   display: inline-block;
   padding-right: 1.2rem;
   position: relative;
   margin-bottom: 2.5rem;
 }
 
-.services__title, .precenses__title{
+.services__title, .precenses__title, .contact-me__subtitle-form{
   font-size: 2.3rem;
 }
 
 .services__title::after,
-.precenses__title::after {
+.precenses__title::after,
+.contact-me__subtitle-form::after {
   content: "";
   position: absolute;
   top: 15px;
@@ -616,4 +623,142 @@ body {
 
 .article__title{
   font-size: 1.8rem;
+}
+
+/* Contact */
+
+.contact-me__container {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-me__info{
+  flex-basis: 33%;
+  padding: 0 1.5rem;
+}
+
+.contact-me__form-box{
+  flex-basis: 66%;
+  padding: 0 1.5rem;
+}
+
+.contact-me__data{
+  width: 100%;
+  margin-bottom: 1.5rem;
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: var(--box-color);
+  border: 1px solid var(--icon-color)
+}
+
+.contact-me__icon{
+  font-size: 3.3rem;
+  color: var(--secondary-color);
+}
+
+.contact-me__subtitle{
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.form__container {
+  display: flex;
+  flex-direction: row; 
+}
+
+.form__left{
+  flex-basis: 47%;
+  margin-right: 1.5rem;
+}
+
+.form__group{
+  position: relative;
+  margin-bottom: 2.4rem;
+}
+
+.form__input{
+  position: relative;
+  width: 100%;
+  height: 4.2rem;
+  display: block;
+  border: 0.2rem solid var(--sidebar-color);
+  border-radius: 0.5rem;
+  outline: none;
+  box-shadow: 0 1rem 1rem -8px rgba(0, 0, 0, 0.10);
+  background-color: transparent;
+  font-size: 1.5rem;
+  padding: 1rem 1.2rem;
+  line-height: 2.1rem;
+}
+
+.form__input:focus{
+  border: 0.2rem solid var(--secondary-color);
+}
+
+.form__label{
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+  color: var(--icon-color);
+  transition: all 300ms ease-in-out;
+  pointer-events: none;
+}
+
+.form__input:focus~label,
+.form__input:not(:placeholder-shown)~label{
+  top: -2rem;
+  left: 0;
+  z-index: 1;
+  font-size: 1.3rem;
+  color: var(--secondary-color)
+}
+
+.form__input::-webkit-input-placeholder{
+  color: transparent;
+}
+.form__input::-moz-input-placeholder{
+  color: transparent;
+}
+
+.form__right{
+  flex-basis: 50%;
+  max-width: 50%;
+  max-height: 100%;
+}
+
+.form__group--textarea{
+  height: 100%;
+}
+
+.form__input--textarea{
+  display: block;
+  height: 100%;
+}
+
+.form__button{
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+  border: 0.2rem solid var(--secondary-color);
+  color: var(--black-color);
+  background-color: var(--main-color);
+  border-radius: 3rem;
+  box-shadow: 0 1rem 1rem -8px rgba(0, 0, 0 0.22);
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+}
+
+.form__button:hover{
+  background-color: var(--secondary-color);
+  color: var(--main-color)
+}
+
+.contact-me__map{
+  width: 100%;
+  min-height: 15rem;
+  margin-bottom: 3.5rem;
+  overflow: hidden;
+}
+.contact-me__iframe{
+  width: 100%;
+  height: 14rem;
 }
