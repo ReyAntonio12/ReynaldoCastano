@@ -3,7 +3,7 @@
 
 <div align="center">
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <img src="./assets/img/Vertical Lockup on White Background.png" alt="logo" width="140"  height="auto" />
   <br/>
 
   <h3><b>My Portfolio</b></h3>
@@ -29,7 +29,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 My Portfolio <a name="about-project"></a>
 
 This is my personal portfolio project saved in Github. 
 You will be able to look ar my personal website with the direct link to all my projects.
@@ -76,7 +76,7 @@ You will be able to look ar my personal website with the direct link to all my p
 
 You can visit my website by just clicking at this link.
 
-- [reynaldo.dev](https://google.com)
+- [reynaldo.dev](https://reyantonio12.github.io/ReynaldoCastano/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -95,8 +95,8 @@ You just need to have a device with access to internet.
 
 👤 **Reynaldo Castano**
 
-- GitHub: [@githubhandle](https://github.com/ReyAntonio12)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/reynaldo-casta%C3%B1o/?locale=en_US)
+- GitHub: [@ReyAntonio12](https://github.com/ReyAntonio12)
+- LinkedIn: [Reynaldo_Castano](https://www.linkedin.com/in/reynaldo-casta%C3%B1o/?locale=en_US)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -133,7 +133,6 @@ If you like this project please give me a star and follow me on GitHub
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
 
 I would like to thank my wife as she has be supporting me since day one in this adventure. 
 My parents, because they are interested in my future and everything I do.
