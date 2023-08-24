@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1">
     <!--Font sheets -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,12 +12,18 @@
     <!--Styles-->
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/scroll.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!--Menu Responsive -->
+    <script src="assets/js/menu.js" defer></script>
+
     <title>Reynaldo Castano</title>
 </head>
 <body>
     <!--Aside Content-->
     <section class="container">
-        <aside class="container__aside">
+        <aside class="container__aside .container__aside--visible">
             <!--General Information-->
             <div class="aside__user-info">
                 <article class="user-info__generals">
@@ -93,6 +99,14 @@
                 </footer>
             </div>
         </aside>
+
+        <!-- Responsive Menu -->
+
+        <div class="layout__menu-toggle">
+            <ion-icon name="menu-outline" class="menu-toggle__icon  hamburger"></ion-icon>
+            <ion-icon name="log-out-outline" class="menu-toggle__icon xmark"></ion-icon>
+        </div>
+
         <!-- Main Information -->
         <main class="container__main">
             <section class="main__content">
